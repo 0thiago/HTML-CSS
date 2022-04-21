@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+    <style>
+
+        h1 { /* block-level */
+
+            /* if you want to change the display type (inlive/block), add a display: block; */
+
+            /* you also can turn an element into an inline-block. It will remains in a line, but with some block properties  */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* If the measures are the same for all directions, just specify it, sample: border: 10px; */
+
+            border-width: 10px; /* borda */
+            border-style: solid;
+            border-color: darkgray;
+
+            /* shorthand border: 
+
+            border: width, style, color 
+
+            */
+
+            padding-top: 10px; /* preenchimento */
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* shorthand padding (always clockwise)
+
+            padding: top, right, bottom, left
+
+            */
+
+            margin-top: 10px; /* margem */
+            margin-right: auto;
+            margin-bottom: 30px;
+            margin-left: auto;
+
+            /* shorthand margin
+
+            margin: top, right, bottom, left
+
+            */
+
+           /* margin: auto;  →  deixa a caixa centralizada */
+
+           outline-width: 5px; /* contorno */
+           outline-style: dashed;
+           outline-color: blue;
+        }
+
+        a { /* inline-level */
+            border: 10px solid gray;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+     <h1>Box lvl sample</h1>
+        <p>Parágrafos também são exemplos de box-levels, mas os <a href="#">links são exemplos de inline-level.</a> Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

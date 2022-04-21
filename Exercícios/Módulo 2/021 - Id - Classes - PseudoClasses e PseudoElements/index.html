@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: #e8e8e8;
+            /*border: 2px solid black;*/
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+    /*
+    
+        pseudoclasses = :
+
+    */
+
+        div:hover {
+            background-color: #e0e6fa;
+        }
+
+        div#main {
+            background-color: #f28181;
+            /*border: 2px solid black;*/
+            text-align: center;
+            height: 665px;
+            width: 650px;
+
+        }
+        div#bottom {
+            display: inline-block;
+            background-color: #e8e8e8;
+            /*border: 2px solid black;*/
+            text-align: center;
+            height: 200px;
+            width: 600px;
+            border-bottom: 20px;
+        }
+
+        div#bottom:hover{
+            background-color: #e0e6fa;
+        }
+
+        div#bottom:empty{ /* formato caso algo esteja vazio*/
+            background-color: greenyellow;
+        }
+
+        /* checked indica o formato caso o radio, checkbox ou option esteja selecionado */
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <p>
+            <div id="d1">01</div>
+            <div id="d2">02</div>
+            <div id="d3">03</div>
+        </p>
+        <p>
+            <div id="d4">01</div>
+            <div id="d5">02</div>
+            <div id="d6">03</div>
+        </p>
+        <p><div id="bottom"></div></p>
+    </div>
+
+</body>
+</html>

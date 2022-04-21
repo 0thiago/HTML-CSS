@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    background-color: #e9edf1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #1f72c0;
+}
+
+/*
+
+    em HTML é id → em CSS é #
+    em HTML é class = em CSS é .
+    - podemos ter uma id e uma class no mesmo elemento
+    - o id sobrepõe a class
+
+    OBS.: Não usar 2 IDs em 2 elementos diferentes, mesmo que sejam da mesma tag. Usar Classes
+
+*/
+
+h1#principal {
+    text-align: center;
+    background-color: #1f72c0;
+    color: #ffffff;
+}
+
+.basico {
+    color: #5bcc5b;
+}
+
+.intermediario {
+    color: #209620;
+}
+
+.avancado{
+    color: #185e18;
+}
+
+h2 {
+    color: #764a9e;
+}
+
