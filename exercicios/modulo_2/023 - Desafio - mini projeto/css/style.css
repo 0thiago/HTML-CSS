@@ -54,7 +54,7 @@ header {
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     
 }
 
@@ -64,6 +64,8 @@ header > h1 {
     font-weight: normal;
     font-size: 3.5em;
     line-height: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 15px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
     
@@ -79,7 +81,7 @@ header > p {
     
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 

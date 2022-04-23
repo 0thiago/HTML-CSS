@@ -3,4 +3,4 @@
 
 Atualizando repositórios local/online
 
-tst
+<a href="https://0thiago.github.io/HTML-CSS/exercicios/modulo_2/023%20-%20Desafio%20-%20mini%20projeto/android.html">Abrir android.html </a>
