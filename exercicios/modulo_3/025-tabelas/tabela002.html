@@ -15,6 +15,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
             
         }
 
@@ -27,18 +28,31 @@
 
         th {
             border: 1px solid black;   
-            black 
+            padding: 5px;
         }
 
         td {
             border: 1px solid black;
             text-align: center;
             vertical-align: middle;
+            padding: 5px;
         }
 
         thead {
-            background-color: grey;
+            background-color: rgb(91, 90, 90);
             color: white;
+            
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(91, 90, 90);
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(2n-3) {
+            background-color: lightgrey;
         }
 
         tfoot {
@@ -48,17 +62,37 @@
 
         .num {
             text-align: right;
+            padding-right: 5px;
+        }
+
+        caption {
+            font-weight: bold;
+            background-color: rgb(231, 231, 231);
+            border: 2px solid black;
+            margin-bottom: -1px;
         }
 
     </style>
 
 </head>
 <body>
+    <!--
+    FIXANDO CABEÇALHO DA TABELA NA ROLAGEM:
+
+    1) thead > tr > th {
+            position: sticky;
+            top: -1px;
+
+    2) table {
+            position: relative;
+
+    -->
     <h1>Uso de Tabelas Grandes</h1>
     <!--
 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -69,10 +103,12 @@
     -->
 
     <Table>
+
+        <caption><p>População das Unidades Federativas</p></caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 120px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -148,11 +184,60 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17.264.943</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.7/91</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.7/91</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.7/91</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>998.970.000</strong></td>            
         </tfoot>
     </Table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio dolor suscipit placeat autem maxime nesciunt qui nemo laborum provident. Praesentium temporibus nam quibusdam fugiat, voluptates optio veritatis in non. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, et! Rem reiciendis expedita nam molestias tempore explicabo, voluptas praesentium minima consequuntur quibusdam rerum ex numquam doloremque dicta, odit vero inventore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe accusamus dignissimos impedit voluptas, in omnis similique, doloribus at eum nesciunt consectetur repellat quod blanditiis animi eaque incidunt quae temporibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio dolor suscipit placeat autem maxime nesciunt qui nemo laborum provident. Praesentium temporibus nam quibusdam fugiat, voluptates optio veritatis in non. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, et! Rem reiciendis expedita nam molestias tempore explicabo, voluptas praesentium minima consequuntur quibusdam rerum ex numquam doloremque dicta, odit vero inventore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe accusamus dignissimos impedit voluptas, in omnis similique, doloribus at eum nesciunt consectetur repellat quod blanditiis animi eaque incidunt quae temporibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio dolor suscipit placeat autem maxime nesciunt qui nemo laborum provident. Praesentium temporibus nam quibusdam fugiat, voluptates optio veritatis in non. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, et! Rem reiciendis expedita nam molestias tempore explicabo, voluptas praesentium minima consequuntur quibusdam rerum ex numquam doloremque dicta, odit vero inventore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe accusamus dignissimos impedit voluptas, in omnis similique, doloribus at eum nesciunt consectetur repellat quod blanditiis animi eaque incidunt quae temporibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio dolor suscipit placeat autem maxime nesciunt qui nemo laborum provident. Praesentium temporibus nam quibusdam fugiat, voluptates optio veritatis in non. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, et! Rem reiciendis expedita nam molestias tempore explicabo, voluptas praesentium minima consequuntur quibusdam rerum ex numquam doloremque dicta, odit vero inventore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe accusamus dignissimos impedit voluptas, in omnis similique, doloribus at eum nesciunt consectetur repellat quod blanditiis animi eaque incidunt quae temporibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio dolor suscipit placeat autem maxime nesciunt qui nemo laborum provident. Praesentium temporibus nam quibusdam fugiat, voluptates optio veritatis in non. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, et! Rem reiciendis expedita nam molestias tempore explicabo, voluptas praesentium minima consequuntur quibusdam rerum ex numquam doloremque dicta, odit vero inventore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe accusamus dignissimos impedit voluptas, in omnis similique, doloribus at eum nesciunt consectetur repellat quod blanditiis animi eaque incidunt quae temporibus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio dolor suscipit placeat autem maxime nesciunt qui nemo laborum provident. Praesentium temporibus nam quibusdam fugiat, voluptates optio veritatis in non. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, et! Rem reiciendis expedita nam molestias tempore explicabo, voluptas praesentium minima consequuntur quibusdam rerum ex numquam doloremque dicta, odit vero inventore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint saepe accusamus dignissimos impedit voluptas, in omnis similique, doloribus at eum nesciunt consectetur repellat quod blanditiis animi eaque incidunt quae temporibus.</p>
+
+    
 </body>
 </html>
